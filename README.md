@@ -47,23 +47,33 @@ Power BI Dashboard
 # 📁 Project Structure
 
 ```
-Employee-Attrition-Data-Engineering
+Employee_Attrition-HR-Analytics/
 │
-├── Dataset
+├── Architecture/
+│   └── Architecture.png
+│
+├── Dataset/
 │   └── employee_attrition.csv
 │
-├── Databricks
-│   └── Employee_Attrition_Notebook.ipynb
+├── Databricks_Notebooks/
+│   ├── 01_raw_to_bronze.py
+│   ├── 02_bronze_to_silver.py
+│   └── 03_silver_to_gold.py
 │
-├── PowerBI
-│   └── Employee_Attrition.pbix
-│
-├── Pipeline
+├── ADF_Pipeline/
 │   ├── Pipeline.png
 │   └── Pipeline_Run.png
 │
-├── Dashboard
-│   └── Dashboard.png
+├── Dashboard/
+│   ├── Employee_Attrition_Dashboard.pbix
+│   └── Dashboard.png  
+│
+├── Screenshots/
+│   ├── 01_Dataset.png
+│   ├── 02_ADLS_Folders.png
+│   ├── 03_ADF_Pipeline_Success.png
+│   ├── 04_Gold_Data.png
+│   └── 05_PowerBI_Dashboard.png
 │
 └── README.md
 ```
@@ -150,33 +160,7 @@ The dashboard includes:
 5. Refresh the Power BI report.
 6. Use slicers to explore insights interactively.
 
----
 
-# 📷 Screenshots
-
-## Dashboard
-
-(Add Dashboard.png here)
-
----
-
-## Azure Data Factory Pipeline
-
-(Add Pipeline.png here)
-
----
-
-## Pipeline Execution
-
-(Add Pipeline_Run.png here)
-
----
-
-## Architecture Diagram
-
-(Add Architecture.png here)
-
----
 
 # 🎯 Learning Outcomes
 
@@ -191,6 +175,15 @@ Through this project, I gained practical experience in:
 - Interactive Dashboard Development
 - Power BI Data Visualization
 
+
+# ⭐ Future Enhancements
+
+- Real-time data ingestion
+- Predictive attrition analysis using Machine Learning
+- Automated email alerts
+- Incremental data loading
+- Azure Synapse Analytics integration
+
 ---
 
 # 👩‍💻 Author
@@ -203,16 +196,3 @@ Swami Keshvanand Institute of Technology, Management & Gramothan (SKIT), Jaipur
 
 ---
 
-# ⭐ Future Enhancements
-
-- Real-time data ingestion
-- Predictive attrition analysis using Machine Learning
-- Automated email alerts
-- Incremental data loading
-- Azure Synapse Analytics integration
-
----
-
-# 📜 License
-
-This project is created for educational and learning purposes.
